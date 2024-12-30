@@ -1,15 +1,14 @@
-//
-// Created by xiang on 2021/10/8.
-//
+
 #include <gflags/gflags.h>
 #include <unistd.h>
 #include <csignal>
 
 #include "laser_mapping.h"
 
-/// run the lidar mapping in online mode
 
-DEFINE_string(traj_log_file, "./Log/traj.txt", "path to traj log file");
+
+//DEFINE_string(traj_log_file, "./Log/traj.txt", "path to traj log file");
+DEFINE_string(traj_log_file, "~/catkin_ws/src/faster-lio/Log/traj.txt", "path to traj log file");
 void SigHandle(int sig) {
     faster_lio::options::FLAG_EXIT = true;
     ROS_WARN("catch sig %d", sig);

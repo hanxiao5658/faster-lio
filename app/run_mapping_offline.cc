@@ -1,6 +1,4 @@
-//
-// Created by xiang on 2021/10/9.
-//
+
 
 #include <gflags/gflags.h>
 #include <rosbag/bag.h>
@@ -11,7 +9,7 @@
 #include "laser_mapping.h"
 #include "utils.h"
 
-/// run faster-LIO in offline mode
+
 
 DEFINE_string(config_file, "./config/avia.yaml", "path to config file");
 DEFINE_string(bag_file, "/home/xiang/Data/dataset/fast_lio2/avia/2020-09-16-quick-shack.bag", "path to the ros bag");
